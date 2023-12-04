@@ -49,7 +49,7 @@ public class PersonController {
 		return service.update(person);
 	}
 	
-	@RequestMapping(method = RequestMethod.DELETE, 
+	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE, 
 			consumes = MediaType.APPLICATION_JSON_VALUE,
 			produces = MediaType.APPLICATION_JSON_VALUE)
 	public void delete(@PathVariable(value = "id") Long id) {
