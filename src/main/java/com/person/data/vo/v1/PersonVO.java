@@ -3,22 +3,15 @@ package com.person.data.vo.v1;
 import java.io.Serializable;
 import java.util.Objects;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-
 public class PersonVO implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	private Long id;
 	private String firstName;
 	private String lastName;
 	private String adress;
 	private String gender;
-	
+
 	public PersonVO() {
 	}
 
